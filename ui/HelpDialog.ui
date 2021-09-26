@@ -49,7 +49,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Carve</string>
+       <string>SVG Carve</string>
       </property>
      </widget>
     </item>

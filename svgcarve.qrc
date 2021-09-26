@@ -8,7 +8,7 @@
         <file>images/paste.png</file>
         <file>images/play.png</file>
         <file>images/play-hovered.png</file>
-        <file>images/Carve-48.png</file>
+        <file>images/icons/svgcarve-48.png</file>
         <file>images/code.png</file>
         <file>images/design.png</file>
     </qresource>

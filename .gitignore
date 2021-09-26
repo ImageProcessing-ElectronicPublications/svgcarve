@@ -9,6 +9,7 @@
 *.so
 *.dll
 *.dylib
+*.exe
 
 # Qt-es
 
@@ -26,3 +27,4 @@ Makefile*
 # QtCreator
 
 *.autosave
+object_script.svgcarve

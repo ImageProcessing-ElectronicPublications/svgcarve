@@ -2,15 +2,16 @@
 # Project created by QtCreator 2008-12-08T23:14:52
 # -------------------------------------------------
 # Windows-specific for the application icon
-# RC_FILE = carve.rc
+# RC_FILE = svgcarve.rc
 # Mac-specific for the application icon
-ICON = Carve.icns
+ICON = images/svgcarve.ico
+CONFIG -= debug_and_release debug
 
 # QT += script \
 # webkit
 QT += svg \
     xml
-TARGET = Carve
+TARGET = svgcarve
 TEMPLATE = app
 SOURCES += src/main.cpp \
     src/carvewindow.cpp \
@@ -72,4 +73,9 @@ OTHER_FILES += README.txt \
     HISTORY.txt \
     INSTALL.txt \
     LICENSE.txt
-RESOURCES += carve.qrc
+RESOURCES += svgcarve.qrc
+
+win32 {
+    RC_FILE += svgcarve_resource.rc
+    OTHER_FILES += svgcarve_resource.rc
+}

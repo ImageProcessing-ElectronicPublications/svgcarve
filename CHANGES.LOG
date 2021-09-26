@@ -1,0 +1,46 @@
+SVG Carve Editor.
+
+0.04 (Beryllium)
+"brittle, light-weight, not known to be necessary or useful"
+
+SVG Carve Beryllium is the latest release of the Carve SVG Editor, released Feb 15th, 2009. Carve Beryllium includes the following new features:
+
+    Export SVG as PNG
+    Design Mode now supports:
+        linear and radial gradients
+        <solidColor> elements
+        Basic <text> element support
+        Basic <image> element support
+        preserveAspectRatio
+        fill-rule, stroke-linecap, stroke-linejoin
+
+0.03 (Lithium)
+"soft, easily deformed, comparatively rare"
+
+SVG Carve Lithium was the third release of the Carve SVG Editor, released Jan 18, 2009.
+SVG Carve Lithium included the following new features:
+
+    A dockable Properties pane allowing editing of the selected node's attributes
+    Beginnings of a "Design" mode allowing the viewing and selection of the document elements graphically
+    Find/Replace functionality in the Text editor
+    Undo/Redo
+
+In addition, several UI-related bugs have been fixed.
+
+0.02 (Helium)
+"colorless, odorless, tasteless, non-toxic, inert"
+
+SVG Carve Helium was the second release of the Carve SVG Editor. It was released Jan 3, 2009.
+SVG Carve Helium added the following features:
+
+    Syntax highlighting of SVG elements, attribute names, attribute values, comments in the text editor
+    Automatic indication of valid XML
+    Ability to change the font family and size in the text editor
+    A dockable DOM browser pane
+
+0.01 (Hydrogen)
+"colorless, odorless, tasteless, highly flammable"
+
+SVG Carve Hydrogen was the first functioning release of the SVG Carve Editor.
+It was released Dec 23rd, 2008 - just in time for Christmas.
+SVG Carve Hydrogen was basically a crude text editor with the ability to open up multiple SVG documents and to preview them in a popup window.
