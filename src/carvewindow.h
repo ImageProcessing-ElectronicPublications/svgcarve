@@ -21,12 +21,12 @@
 #define CARVEWINDOW_H
 
 #include "carve.h"
-#include <QtGui/QMainWindow>
+#include <QMainWindow>
 #include <QSettings>
 #include <QVector>
 #include <QMdiArea>
 #include <QFont>
-#include "../ui_carvewindow.h"
+#include "ui_carvewindow.h"
 
 class CarveSVGDocument;
 class CarveSVGNode;
@@ -48,7 +48,7 @@ class CarveWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    CarveWindow(QWidget *parent = 0, Qt::WFlags flags = 0);
+    CarveWindow(QWidget *parent = 0, Qt::WindowFlags flags = 0);
 
     // global actions that affect a lot of things
     void selectNode(CarveSVGNode* node);

@@ -4,13 +4,12 @@
 # Windows-specific for the application icon
 # RC_FILE = svgcarve.rc
 # Mac-specific for the application icon
+
 ICON = images/svgcarve.ico
 CONFIG -= debug_and_release debug
 
-# QT += script \
-# webkit
-QT += svg \
-    xml
+# QT += script webkit
+QT += svg xml
 TARGET = svgcarve
 TEMPLATE = app
 SOURCES += src/main.cpp \
@@ -75,7 +74,21 @@ OTHER_FILES += README.txt \
     LICENSE.txt
 RESOURCES += svgcarve.qrc
 
-win32 {
+# build dir
+UI_DIR =      ./build
+MOC_DIR =     ./build
+RCC_DIR =     ./build
+OBJECTS_DIR = ./build
+mytarget.commands += $${QMAKE_MKDIR} ./build
+
+greaterThan(QT_MAJOR_VERSION, 4)
+{
+  QT += widgets
+  DEFINES += HAVE_QT5
+}
+
+win32
+{
     RC_FILE += svgcarve_resource.rc
     OTHER_FILES += svgcarve_resource.rc
 }

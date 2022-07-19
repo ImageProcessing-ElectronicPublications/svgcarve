@@ -189,10 +189,17 @@ EPathParserState findCmd(const QString& text, int& index) {
     if(cmdIndex >= index) {
 	index = cmdIndex+1;
 	QChar Command = text.at(cmdIndex);
+#ifndef HAVE_QT5
 	char command = Command.toAscii();
 
 	if(command >= 'a' && command <= 'z') { bRelative = true; command = Command.toUpper().toAscii(); }
 	else { bRelative = false; }
+#else
+	char command = Command.toLatin1();
+
+	if(command >= 'a' && command <= 'z') { bRelative = true; command = Command.toUpper().toLatin1(); }
+	else { bRelative = false; }
+#endif
 
 	switch(command) {
 	    case 'M': return IN_MOVETO;

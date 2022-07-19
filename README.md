@@ -6,12 +6,14 @@
 
 # SVG Carve Editor
 
+![svgcarve](svgcarve.png)
+
 SVG Carve is an open-source, cross-platform SVG editor built on Qt.
 
 SVG Carve includes an SVG-aware text editor, dockable DOM browser and Properties panels, a preview window and the beginnings of a graphical editing mode.
 
 URL: https://github.com/ImageProcessing-ElectronicPublications/svgcarve
 
---- 
-2021 
+---  
+2021  
 zvezdochiot

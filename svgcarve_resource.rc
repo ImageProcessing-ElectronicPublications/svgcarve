@@ -6,8 +6,8 @@
 
 IDI_ICON1 ICON "images/icons/svgcarve.ico"
 VS_VERSION_INFO VERSIONINFO
-    FILEVERSION 0,04,1,0
-    PRODUCTVERSION 0,04,1,0
+    FILEVERSION 0,05,0,0
+    PRODUCTVERSION 0,05,0,0
     FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
     FILEFLAGS VS_FF_DEBUG
@@ -23,8 +23,8 @@ VS_VERSION_INFO VERSIONINFO
             BLOCK "040904b0"
             BEGIN
                 VALUE "CompanyName", "GIT.\0"
-                VALUE "FileDescription", "Svg editor code (written in qt4).\0"
-                VALUE "FileVersion", "0.04.1.0\0"
+                VALUE "FileDescription", "Svg editor code (written in qt5).\0"
+                VALUE "FileVersion", "0.05.0.0\0"
                 VALUE "LegalCopyright", "wangxkvv <wangxkvv@gmail.com> [https://github.com/wangxkvv]\0"
                 VALUE "OriginalFilename", "svgcarve.exe\0"
                 VALUE "ProductName", "SVG Carve\0"

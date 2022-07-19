@@ -67,7 +67,9 @@ bool CarveSVGDocument::setContent(const QString& text) {
     root_ = CarveSVGNode::createNode(doc_, 0, this->window_);
 
     // inform all views that we've reset
+#ifndef HAVE_QT5
     reset();
+#endif
 
     return bResult;
 }

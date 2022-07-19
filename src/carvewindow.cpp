@@ -18,9 +18,9 @@
 
 */
 #include "carvewindow.h"
-#include "../ui_HelpDialog.h"
-#include "../ui_PreferencesDialog.h"
-#include "../ui_FindDialog.h"
+#include "ui_HelpDialog.h"
+#include "ui_PreferencesDialog.h"
+#include "ui_FindDialog.h"
 #include "carvesvgdocument.h"
 #include "carvesvgwindow.h"
 #include "carvepreviewwindow.h"
@@ -101,7 +101,7 @@ CarveSVGNode* CarveSVGNode::createNode(const QDomElement& node, int row, CarveSV
     return new CarveSVGNode(node, row, window, svgUndefined, parent);
 }
 
-CarveWindow::CarveWindow(QWidget *parent, Qt::WFlags flags)
+CarveWindow::CarveWindow(QWidget *parent, Qt::WindowFlags flags)
     : QMainWindow(parent, flags),
       domBrowserColumn0Width(-1),
       timerDocModified(new QTimer(this)),
@@ -261,7 +261,9 @@ void CarveWindow::loadSettings() {
     domDock->setWidget(domTree);
     ui.menuWindow->insertAction(ui.menuWindow->actions().at(0), domDock->toggleViewAction());
     connect(domDock, SIGNAL(dockLocationChanged(Qt::DockWidgetArea)), this, SLOT(domBrowserDocked(Qt::DockWidgetArea)));
+#ifndef HAVE_QT5
     connect(domTree->header(), SIGNAL(sectionResized(int,int,int)), this, SLOT(domBrowserHeaderChanged(int,int,int)));
+#endif
     connect(this, SIGNAL(nodeSelected(CarveSVGNode*)), domTree, SLOT(nodeSelected(CarveSVGNode*)));
 //    connect();
     domDock->toggleViewAction()->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_D));

@@ -17,7 +17,7 @@
     along with Carve.  If not, see http://www.gnu.org/licenses/ .
 
 */
-#include <QtGui/QApplication>
+#include <QApplication>
 #include "carvewindow.h"
 
 int main(int argc, char *argv[])
